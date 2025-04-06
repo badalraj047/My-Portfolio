@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fb6ae5a6c5.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logomain.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header"> Home</a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="#projects"> Projects</a></li>
+                <li><a href="#certificates"> Certifications</a></li>
+                <li><a href="#contact"> Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Badal</span><br>Raj from India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------------about------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/main.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>
+                    A B.Tech Computer Science Engineering student at Lovely Professional University, 
+                    specializing in Cloud Computing. I'm an AWS Certified Cloud Practitioner with strong 
+                    hands-on experience in services like EC2, RDS, Lambda, and S3, and automation tools 
+                    such as Jenkins and Docker. I also hold a Microsoft Azure Administrator Associate certification. 
+                    I'm passionate about building real-world, 
+                    cloud-native solutions that drive efficiency, scalability, and innovation.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>Python, Java, SQL, HTML, CSS</li>
+                        <li><span>Cloud & DevOps</span><br>AWS (Lambda, EC2, API Gateway, RDS, IAM), Docker, CI/CD (GitHub Actions)</li>
+                        <li><span>Version Control & OS</span><br>Git, GitHub, Ubuntu Linux</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="achievements">
+                    <ul>
+                        <li><span>Coding & Problem Solving</span><br>Solved 200+ Data Structures and Algorithms problems on platforms like LeetCode and GeeksforGeeks, significantly enhancing coding fluency and logic-building skills</li>
+                        <li><span>Leadership & Recognition</span><br>Coordinated the Interschool Literary Championship, handling logistics and engaging with participants to help create a smooth and memorable event</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Computer Science and Engineering at Lovely Professional University</li>
+                        <li><span>2020 - 2021</span><br>Intermediate (Science Stream)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------Projects---------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-user-lock"></i>
+                <h2>Serverless Login Page</h2>
+                <br>
+                <p>• Built a secure and scalable serverless login system using AWS Lambda and API Gateway  
+                    to handle user authentication <br>
+                    • Engineered backend logic in Python to verify use credentials and manage authorization with JWT for 
+                    session handling <br>
+                    • Deployed the frontend on an AWS EC2 instance (Apache) and ensured secure communication using 
+                    CORPS policies and IAM roles <br> 
+                    • Improved scalability to handle up to 1000 concurrent login requests without performance issues </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-aws"></i>
+                <h2>Web Server Hosting on AWS EC2</h2>
+                <br>
+                <p>• Built a secure and scalable serverless login system using AWS Lambda and API Gateway  
+                    to handle user authentication <br>
+                    • Configured a website on AWS EC2 using Ubuntu and Apache for reliable hosting <br>
+                    • Strengthened server security by improving SSH access and enabling automatic security updates <br> 
+                    • Integrated GitHub Actions to automate website updates and remove manual deployment tasks <br>
+                    • Reduced maintenance efforts by 30% through automation </p>
+                    <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Library Management System</h2>
+                <br>
+                <p>• Built a basic Library Management System to handle book records through a Java program  
+                    running in the terminal <br> 
+                    • Developed backend logic using Java with OOP principles and integrated CRUD operations for  
+                    adding, updating, and deleting book records <br> 
+                    • Created a structured MySQL database to store book details and optimized queries for quick data access <br> 
+                    • Improvised efficiency to manage over 500+ book records  </p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------Certifications / Certifications---------------------------- -->
+<div id="certificates">
+    <div class="container">
+        <h1 class="sub-title">Certificates</h1>
+        <div class="certi-list">
+            <div class="certi">
+                <img src="Images/Certi1.png" class="cer1">
+                <div class="layer">
+                    <h3> Azure Administrator Associate | Microsoft </h3>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="certi">
+                <img src="Images/Certi2.jpg" class="cer2">
+                <div class="layer">
+                    <h3> Core and Advanced Java | Board Infinity</h3>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="certi">
+                <img src="Images/Certi3.jpg" class="cer3">
+                <div class="layer">
+                    <h3>Mastering Data Structures & Algorithms using C and C++ | Udemy</h3>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- --------------------------contact----------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> badalraj.047@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +91 7739936118</p>
+                <div class="social-icons">
+                    <a href="www.linkedin.com/in/badalraj07"><i class="fa-brands fa-linkedin"></i> </a>
+                    <a href="https://github.com/badalraj047"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/badalraj_04?igsh=Yzd6NDc4aGpzYnkz"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Images/Resume Badal.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxwm7d1nV489Z4aqAboBwptHtKIeapoACJmtgc6vk5TNFfOpJG6XZiEKZVlldEkOXn-/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")   
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
