@@ -67,7 +67,6 @@ header-text h1{
     margin-top: 20px;
 }
 .header-text h1 span{
-    /* color: #ff004f; */
     color: #D50100;
 }
 /* -----------------about------------------- */
@@ -254,7 +253,7 @@ header-text h1{
     margin: 50px auto;
     width: fit-content;
     border:1px solid #ff004f;
-    padding: 14px 50px;
+    padding: 10px 20px;
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
@@ -262,7 +261,7 @@ header-text h1{
 
 }
 .btn:hover{
-    background: #ff004f;
+    background: #D50100;
 }
 
 /* -------------------------contact-------------------------- */
@@ -297,7 +296,13 @@ header-text h1{
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #D50100;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease;
 }
 .contact-right form{
     width: 100%;
