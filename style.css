@@ -10,6 +10,8 @@ html{
 body{
     background: #080808;
     color: #fff;
+    line-height: 1.6;
+    letter-spacing: 0.3px; 
 }
 #header{
     width: 100%;
@@ -174,8 +176,9 @@ header-text h1{
     display: inline-block;
 }
 .projects-list div:hover{
-    background: #ff004f;
-    transform: translateY(-10px);
+    background: #D50100;
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 /* ---------------certificates------------------ */
@@ -195,7 +198,7 @@ header-text h1{
     overflow: hidden;
 }
 .certi img{
-    width: 100;
+    width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -345,7 +348,8 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: rgba(255, 0, 79, 0.9);
+        backdrop-filter: blur(8px);
         position: fixed;
         top: 0;
         right: -200px;
@@ -389,4 +393,8 @@ nav .fa-solid{
     color: #61b752;
     margin-top: -40px;
     display: block;
+    font-weight: bold;
 }
+form input:focus, form textarea:focus {
+    border: 2px solid #ffffff !important;
+  }
