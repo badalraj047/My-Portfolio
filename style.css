@@ -535,12 +535,14 @@ nav .fa-solid.fa-xmark{ display: none; }
     object-fit: contain;
 }
 .tech-icon{
-    font-size: 34px;
+    font-size: 20px;
     width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
+    background: var(--bg-warm);
 }
 .tech-tile span{
     font-size: 12.5px;
