@@ -22,6 +22,7 @@
             <ul id="sidemenu">
                 <li><a href="#header" class="active-nav">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certificates">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -32,13 +33,14 @@
     </div>
 </header>
 
-<!-- -----------------header/hero------------------ -->
+<!-- -----------------hero------------------ -->
 <div id="header">
+    <div class="hero-bg-decor" aria-hidden="true"></div>
     <div class="container hero-grid">
         <div class="header-text">
             <span class="pill">Software Engineer</span>
-            <h1>Hi, I'm<br><span>Badal Raj</span></h1>
-            <p class="hero-tagline">Building AI-Powered Products with <span class="accent-text">Cloud &amp; Full-Stack</span> Engineering</p>
+            <h1>Hi, I'm <span class="grad-text">Badal Raj</span></h1>
+            <p class="hero-tagline">Building AI-powered products with <span class="grad-text">cloud &amp; full-stack</span> engineering</p>
             <p class="header-sub">
                 B.Tech CSE graduate (LPU, 2026) and founder of
                 <a href="https://mrintervo.com" target="_blank" rel="noopener">MrInterVo</a>,
@@ -48,15 +50,16 @@
             <div class="header-actions">
                 <a href="#projects" class="btn btn2">View Projects <i class="fa-solid fa-arrow-right"></i></a>
                 <a href="Images/Resume Badal.pdf" download class="btn btn3"><i class="fa-solid fa-download"></i> Download CV</a>
-                <a href="https://github.com/badalraj047" target="_blank" rel="noopener" class="icon-btn"><i class="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com/in/badalraj07" target="_blank" rel="noopener" class="icon-btn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:badalraj.047@gmail.com" class="icon-btn"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/badalraj047" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/badalraj07" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:badalraj.047@gmail.com" class="icon-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
 
         <div class="hero-photo-wrap">
-            <div class="hero-photo-blob"></div>
-            <img src="Images/main.jpg" class="hero-photo">
+            <div class="hero-photo-ring"></div>
+            <div class="hero-dots" aria-hidden="true"></div>
+            <img src="Images/main.jpg" class="hero-photo" alt="Badal Raj">
             <div class="stat-card stat-1">
                 <i class="fa-solid fa-chart-line"></i>
                 <div>
@@ -87,6 +90,10 @@
 <!-- -----------------about------------------ -->
 <div id="about">
     <div class="container">
+        <div class="section-heading">
+            <span class="eyebrow">About</span>
+            <h2>Who I am</h2>
+        </div>
         <div class="row about-row">
             <div class="card about-card">
                 <h3><i class="fa-solid fa-user"></i> About Me</h3>
@@ -103,22 +110,13 @@
                 </ul>
             </div>
 
-            <div class="card tech-card">
-                <h3><i class="fa-solid fa-layer-group"></i> Core Technologies</h3>
-                <div class="pill-grid">
-                    <span>Java</span><span>Python</span><span>TypeScript</span>
-                    <span>React</span><span>Vite</span><span>Node.js</span>
-                    <span>Supabase</span><span>MySQL</span><span>PostgreSQL</span>
-                    <span>AWS</span><span>Azure</span><span>Docker</span>
-                    <span>Git</span><span>REST API</span><span>HTML</span><span>CSS</span>
-                </div>
-
-                <h4 class="achieve-title">Achievements</h4>
+            <div class="card achieve-card">
+                <h3><i class="fa-solid fa-trophy"></i> Achievements</h3>
                 <div class="achieve-grid">
                     <div class="achieve-item">
-                        <i class="fa-solid fa-trophy"></i>
+                        <i class="fa-solid fa-code"></i>
                         <span class="stat-value">400+</span>
-                        <span class="stat-caption">Problems Solved</span>
+                        <span class="stat-caption">DSA Problems Solved</span>
                     </div>
                     <div class="achieve-item">
                         <i class="fa-solid fa-rocket"></i>
@@ -131,6 +129,55 @@
                         <span class="stat-caption">Certifications</span>
                     </div>
                 </div>
+                <p class="achieve-note">Coordinated the Interschool Literary Championship — managed logistics and participant engagement.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------------skills------------------ -->
+<div id="skills">
+    <div class="container">
+        <div class="section-heading">
+            <span class="eyebrow">Skills</span>
+            <h2>Core Technologies</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-cat">
+                <h4><i class="fa-solid fa-code"></i> Languages</h4>
+                <div class="pill-grid">
+                    <span>Java</span><span>Python</span><span>TypeScript</span><span>SQL</span><span>HTML</span><span>CSS</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <h4><i class="fa-solid fa-window-restore"></i> Frontend</h4>
+                <div class="pill-grid">
+                    <span>React</span><span>Vite</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <h4><i class="fa-solid fa-server"></i> Backend &amp; Data</h4>
+                <div class="pill-grid">
+                    <span>Supabase</span><span>REST APIs</span><span>MySQL</span><span>PostgreSQL</span><span>Edge Functions</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <h4><i class="fa-solid fa-brain"></i> AI / ML Integration</h4>
+                <div class="pill-grid">
+                    <span>OpenAI GPT-4o</span><span>ElevenLabs</span><span>Deepgram</span><span>WebRTC</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <h4><i class="fa-solid fa-cloud"></i> Cloud &amp; DevOps</h4>
+                <div class="pill-grid">
+                    <span>AWS Lambda</span><span>AWS EC2</span><span>API Gateway</span><span>AWS RDS</span><span>AWS IAM</span><span>Azure</span><span>Docker</span><span>GitHub Actions</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <h4><i class="fa-solid fa-wrench"></i> Tools</h4>
+                <div class="pill-grid">
+                    <span>Git</span><span>GitHub</span><span>Ubuntu Linux</span>
+                </div>
             </div>
         </div>
     </div>
@@ -140,7 +187,8 @@
 <div id="projects">
     <div class="container">
         <div class="section-heading">
-            <h2><i class="fa-solid fa-code"></i> Featured Projects</h2>
+            <span class="eyebrow">Work</span>
+            <h2>Featured Projects</h2>
         </div>
 
         <div class="projects-grid">
@@ -151,12 +199,12 @@
                 </div>
                 <div class="project-body">
                     <h3>MrInterVo — AI Interview Platform</h3>
-                    <p>AI-powered mock interviews with live voice feedback, ATS resume scoring, and application tracking.</p>
+                    <p>AI-powered platform for mock interviews with live voice feedback, an ATS resume checker, and application analytics.</p>
                     <div class="tag-row">
                         <span>React</span><span>Vite</span><span>Supabase</span><span>GPT-4o</span><span>WebRTC</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://mrintervo.com" target="_blank" rel="noopener" class="link-primary">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://mrintervo.com" target="_blank" rel="noopener" class="link-primary">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -207,28 +255,29 @@
 <div id="certificates">
     <div class="container">
         <div class="section-heading">
-            <h2><i class="fa-solid fa-award"></i> Certifications</h2>
+            <span class="eyebrow">Credentials</span>
+            <h2>Certifications</h2>
         </div>
         <div class="certi-grid">
             <div class="certi-card">
                 <h3>Azure Administrator Associate</h3>
                 <span class="certi-issuer">Microsoft</span>
-                <a href="Images/badal_Microsoft_Certified_AzureAA-merged.pdf" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="Images/badal_Microsoft_Certified_AzureAA-merged.pdf" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
             <div class="certi-card">
                 <h3>Azure Fundamentals (AZ-900)</h3>
                 <span class="certi-issuer">Microsoft</span>
-                <a href="#">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
+                <span class="certi-unverified"><i class="fa-solid fa-circle-info"></i> Verification link unavailable</span>
             </div>
             <div class="certi-card">
                 <h3>Core &amp; Advanced Java</h3>
                 <span class="certi-issuer">Board Infinity</span>
-                <a href="Images/Board Infinity CoreAndAdvancedJava.pdf" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="Images/Board Infinity CoreAndAdvancedJava.pdf" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
             <div class="certi-card">
                 <h3>Mastering DSA using C &amp; C++</h3>
                 <span class="certi-issuer">Udemy</span>
-                <a href="Images/Mastering DataStructures and Algrorithm using C and C++.pdf" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="Images/Mastering DataStructures and Algrorithm using C and C++.pdf" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
         </div>
     </div>
@@ -245,9 +294,9 @@
                 <p><i class="fa-solid fa-square-phone"></i> +91 7739936118</p>
                 <p><i class="fa-solid fa-location-dot"></i> Patna, Bihar, India</p>
                 <div class="social-icons">
-                    <a href="https://github.com/badalraj047" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com/in/badalraj07" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/badalraj_04?igsh=Yzd6NDc4aGpzYnkz" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/badalraj047" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/badalraj07" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/badalraj_04?igsh=Yzd6NDc4aGpzYnkz" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
             <div class="card contact-right">
@@ -277,7 +326,24 @@
 <script>
     var sidemenu = document.getElementById("sidemenu");
     function openmenu(){ sidemenu.style.right = "0"; }
-    function closemenu(){ sidemenu.style.right = "-220px"; }
+    function closemenu(){ sidemenu.style.right = "-260px"; }
+</script>
+<script>
+    // Active nav-link highlighting on scroll
+    const sections = document.querySelectorAll("#header, #about, #skills, #projects, #certificates, #contact");
+    const navLinks = document.querySelectorAll("#sidemenu a");
+    const setActive = () => {
+        let current = "";
+        sections.forEach(sec => {
+            const rect = sec.getBoundingClientRect();
+            if (rect.top <= 120 && rect.bottom >= 120) current = sec.id;
+        });
+        navLinks.forEach(link => {
+            link.classList.toggle("active-nav", link.getAttribute("href") === "#" + current);
+        });
+    };
+    document.addEventListener("scroll", setActive);
+    setActive();
 </script>
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxwm7d1nV489Z4aqAboBwptHtKIeapoACJmtgc6vk5TNFfOpJG6XZiEKZVlldEkOXn-/exec'
