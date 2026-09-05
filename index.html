@@ -3,77 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <title>Badal Raj — Software Engineer</title>
+    <meta name="description" content="Badal Raj — Software Engineer building AI and cloud-native products. Founder of MrInterVo.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="Images/logomain.jpg">
-    <script src="https://kit.fontawesome.com/fb6ae5a6c5.js" crossorigin="anonymous"></script>   
+    <script src="https://kit.fontawesome.com/fb6ae5a6c5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
+
+<header class="site-nav">
+    <div class="container nav-inner">
+        <a href="#header" class="brand">
             <img src="Images/logomain.jpg" class="logo">
+            <span>Badal Raj</span>
+        </a>
+        <nav>
             <ul id="sidemenu">
-                <li><a href="#header"> Home</a></li>
-                <li><a href="#about"> About</a></li>
-                <li><a href="#projects"> Projects</a></li>
-                <li><a href="#certificates"> Certifications</a></li>
-                <li><a href="#contact"> Contact</a></li>
+                <li><a href="#header" class="active-nav">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </div>
+</header>
+
+<!-- -----------------header/hero------------------ -->
+<div id="header">
+    <div class="container hero-grid">
         <div class="header-text">
-            <p>Software Engineer</p>
-            <h1>Hi, I'm <span>Badal</span><br>Raj from India</h1>
+            <span class="pill">Software Engineer</span>
+            <h1>Hi, I'm<br><span>Badal Raj</span></h1>
+            <p class="hero-tagline">Building AI-Powered Products with <span class="accent-text">Cloud &amp; Full-Stack</span> Engineering</p>
+            <p class="header-sub">
+                B.Tech CSE graduate (LPU, 2026) and founder of
+                <a href="https://mrintervo.com" target="_blank" rel="noopener">MrInterVo</a>,
+                an AI mock-interview and ATS resume platform. I build products end to end —
+                backend architecture, cloud infrastructure, and the interface people use every day.
+            </p>
+            <div class="header-actions">
+                <a href="#projects" class="btn btn2">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="Images/Resume Badal.pdf" download class="btn btn3"><i class="fa-solid fa-download"></i> Download CV</a>
+                <a href="https://github.com/badalraj047" target="_blank" rel="noopener" class="icon-btn"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/badalraj07" target="_blank" rel="noopener" class="icon-btn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:badalraj.047@gmail.com" class="icon-btn"><i class="fa-solid fa-envelope"></i></a>
+            </div>
         </div>
-        <a href="Images/Resume Badal.pdf" download class="btn btn2">Download CV</a>
+
+        <div class="hero-photo-wrap">
+            <div class="hero-photo-blob"></div>
+            <img src="Images/main.jpg" class="hero-photo">
+            <div class="stat-card stat-1">
+                <i class="fa-solid fa-chart-line"></i>
+                <div>
+                    <span class="stat-label">CGPA</span>
+                    <span class="stat-value">7.00<small>/10</small></span>
+                </div>
+            </div>
+            <div class="stat-card stat-2">
+                <i class="fa-solid fa-code"></i>
+                <div>
+                    <span class="stat-label">LeetCode &amp; GFG</span>
+                    <span class="stat-value">400+</span>
+                    <span class="stat-caption">Problems Solved</span>
+                </div>
+            </div>
+            <div class="stat-card stat-3">
+                <i class="fa-solid fa-bullseye"></i>
+                <div>
+                    <span class="stat-label">Focus Area</span>
+                    <span class="stat-value">Cloud · AI</span>
+                    <span class="stat-caption">Full Stack</span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
 <!-- -----------------about------------------ -->
 <div id="about">
     <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="Images/main.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About me</h1>
-                <br>
+        <div class="row about-row">
+            <div class="card about-card">
+                <h3><i class="fa-solid fa-user"></i> About Me</h3>
                 <p>
-                    I'm a B.Tech Computer Science Engineering student at Lovely Professional University, specializing in Cloud Computing. 
-                    As an AWS Certified Cloud Practitioner and Microsoft Azure Administrator Associate, 
-                    I bring hands-on experience with key cloud services like EC2, RDS, Lambda, and S3, along with automation tools 
-                    such as Jenkins and Docker. I'm passionate about building scalable, cloud-native solutions that solve real-world problems 
-                    and drive innovation.
+                    I'm a Computer Science and Engineering graduate from Lovely Professional University,
+                    passionate about full-stack development, cloud computing, and AI. I like turning ideas
+                    into products people actually use — currently building MrInterVo as a solo technical founder.
                 </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Languages</span><br>Python, Java, SQL, HTML, CSS</li>
-                        <li><span>Cloud & DevOps</span><br>AWS (Lambda, EC2, API Gateway, RDS, IAM), Docker, CI/CD (GitHub Actions)</li>
-                        <li><span>Backend & Databases</span><br> REST APIs, MySQL, Apache </li>
-                        <li><span>Version Control & OS</span><br>Git, GitHub, Ubuntu Linux</li>
-                        <li><span>Concepts</span><br> Data Structures & Algorithms, Object-Oriented Programming, Microservices </li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="achievements">
-                    <ul>
-                        <li><span>Coding & Problem Solving</span><br>Solved 200+ Data Structures and Algorithms problems on platforms like LeetCode and GeeksforGeeks, significantly enhancing coding fluency and logic-building skills</li>
-                        <li><span>Leadership & Recognition</span><br>Coordinated the Interschool Literary Championship, handling logistics and engaging with participants to help create a smooth and memorable event</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2022 - Current</span><br>Computer Science and Engineering at Lovely Professional University</li>
-                        <li><span>2020 - 2021</span><br>Intermediate (Science Stream) at Himalayan Public School  </li>
-                        <li><span>2018 - 2019</span><br>Matriculation (Science Stream) at D.A.V Public School </li>
+                <ul class="about-meta">
+                    <li><i class="fa-solid fa-graduation-cap"></i> B.Tech CSE — Lovely Professional University</li>
+                    <li><i class="fa-solid fa-calendar"></i> 2022 – 2026</li>
+                    <li><i class="fa-solid fa-chart-line"></i> CGPA: 7.00 / 10</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Patna, Bihar, India</li>
+                </ul>
+            </div>
 
-                    </ul>
+            <div class="card tech-card">
+                <h3><i class="fa-solid fa-layer-group"></i> Core Technologies</h3>
+                <div class="pill-grid">
+                    <span>Java</span><span>Python</span><span>TypeScript</span>
+                    <span>React</span><span>Vite</span><span>Node.js</span>
+                    <span>Supabase</span><span>MySQL</span><span>PostgreSQL</span>
+                    <span>AWS</span><span>Azure</span><span>Docker</span>
+                    <span>Git</span><span>REST API</span><span>HTML</span><span>CSS</span>
+                </div>
+
+                <h4 class="achieve-title">Achievements</h4>
+                <div class="achieve-grid">
+                    <div class="achieve-item">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span class="stat-value">400+</span>
+                        <span class="stat-caption">Problems Solved</span>
+                    </div>
+                    <div class="achieve-item">
+                        <i class="fa-solid fa-rocket"></i>
+                        <span class="stat-value">MrInterVo</span>
+                        <span class="stat-caption">Founder &amp; Builder</span>
+                    </div>
+                    <div class="achieve-item">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span class="stat-value">4</span>
+                        <span class="stat-caption">Certifications</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,149 +139,161 @@
 <!-- ---------------Projects---------------->
 <div id="projects">
     <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="projects-list">
-            <div>
-                <i class="fa-solid fa-user-lock"></i>
-                <h2>Serverless Login Page</h2>
-                <br>
-                <p>• Built a secure and scalable serverless login system using AWS Lambda and API Gateway  
-                    to handle user authentication <br>
-                    • Engineered backend logic in Python to verify use credentials and manage authorization with JWT for 
-                    session handling <br>
-                    • Deployed the frontend on an AWS EC2 instance and ensured secure communication using 
-                    CORS policies and IAM roles <br> 
-                    • Improved scalability to support 1000+ concurrent logins without performance issues </p>
-                    <a href="#">Learn more</a>
+        <div class="section-heading">
+            <h2><i class="fa-solid fa-code"></i> Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card project-card-featured">
+                <div class="project-thumb thumb-mrintervo">
+                    <span class="featured-badge">Featured</span>
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="project-body">
+                    <h3>MrInterVo — AI Interview Platform</h3>
+                    <p>AI-powered mock interviews with live voice feedback, ATS resume scoring, and application tracking.</p>
+                    <div class="tag-row">
+                        <span>React</span><span>Vite</span><span>Supabase</span><span>GPT-4o</span><span>WebRTC</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://mrintervo.com" target="_blank" rel="noopener" class="link-primary">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <i class="fa-brands fa-aws"></i>
-                <h2>Web Server Hosting on AWS EC2</h2>
-                <br>
-                <p>• Built a secure and scalable serverless login system using AWS Lambda and API Gateway  
-                    to handle user authentication <br>
-                    • Configured a website on AWS EC2 using Ubuntu and Apache for reliable hosting <br>
-                    • Strengthened server security by improving SSH access and enabling automatic security updates <br> 
-                    • Integrated GitHub Actions to automate website updates and remove manual deployment tasks <br>
-                    • Reduced maintenance efforts by 30% through automation </p>
-                    <a href="#">Learn more</a>
+
+            <div class="project-card">
+                <div class="project-thumb thumb-login">
+                    <i class="fa-solid fa-user-lock"></i>
+                </div>
+                <div class="project-body">
+                    <h3>Serverless Login Authentication</h3>
+                    <p>Secure serverless login system using AWS Lambda, API Gateway, and JWT-based session handling.</p>
+                    <div class="tag-row">
+                        <span>AWS Lambda</span><span>API Gateway</span><span>Python</span><span>JWT</span>
+                    </div>
+                </div>
             </div>
-            <div>
-                <i class="fa-solid fa-book"></i>
-                <h2>Library Management System</h2>
-                <br>
-                <p>• Built a basic Library Management System to handle book records through a Java program  
-                    running in the terminal <br> 
-                    • Developed backend logic using Java with OOP principles and integrated CRUD operations for  
-                    adding, updating, and deleting book records <br> 
-                    • Created a structured MySQL database to store book details and optimized queries for quick data access <br> 
-                    • Improvised efficiency to manage over 500+ book records  </p>
-                    <a href="#">Learn more</a>
+
+            <div class="project-card">
+                <div class="project-thumb thumb-aws">
+                    <i class="fa-brands fa-aws"></i>
+                </div>
+                <div class="project-body">
+                    <h3>AWS EC2 Hosting</h3>
+                    <p>Deployed and hosted a website on AWS EC2 with Ubuntu, Apache, and CI/CD via GitHub Actions.</p>
+                    <div class="tag-row">
+                        <span>AWS EC2</span><span>Ubuntu</span><span>Apache</span><span>GitHub Actions</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-thumb thumb-library">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <div class="project-body">
+                    <h3>Library Management System</h3>
+                    <p>A Java-based library system with full CRUD operations and a structured MySQL database backend.</p>
+                    <div class="tag-row">
+                        <span>Java</span><span>OOP</span><span>MySQL</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<!-- ---------------------Certifications / Certifications---------------------------- -->
+
+<!-- ---------------------Certifications---------------------------- -->
 <div id="certificates">
     <div class="container">
-        <h1 class="sub-title">Certificates</h1>
-        <div class="certi-list">
-            <div class="certi">
-                <img src="Images/Certi1.png" class="cer1">
-                <div class="layer">
-                    <h3> Azure Administrator Associate | Microsoft </h3>
-                    <a href="Images/badal_Microsoft_Certified_AzureAA-merged.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+        <div class="section-heading">
+            <h2><i class="fa-solid fa-award"></i> Certifications</h2>
+        </div>
+        <div class="certi-grid">
+            <div class="certi-card">
+                <h3>Azure Administrator Associate</h3>
+                <span class="certi-issuer">Microsoft</span>
+                <a href="Images/badal_Microsoft_Certified_AzureAA-merged.pdf" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="certi">
-                <img src="Images/Certi2.jpg" class="cer2">
-                <div class="layer">
-                    <h3> Core and Advanced Java | Board Infinity</h3>
-                    <a href="Images/Board Infinity CoreAndAdvancedJava.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+            <div class="certi-card">
+                <h3>Azure Fundamentals (AZ-900)</h3>
+                <span class="certi-issuer">Microsoft</span>
+                <a href="#">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <div class="certi">
-                <img src="Images/Certi3.jpg" class="cer3">
-                <div class="layer">
-                    <h3>Mastering Data Structures & Algorithms using C and C++ | Udemy</h3>
-                    <a href="Images/Mastering DataStructures and Algrorithm using C and C++.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+            <div class="certi-card">
+                <h3>Core &amp; Advanced Java</h3>
+                <span class="certi-issuer">Board Infinity</span>
+                <a href="Images/Board Infinity CoreAndAdvancedJava.pdf" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="certi-card">
+                <h3>Mastering DSA using C &amp; C++</h3>
+                <span class="certi-issuer">Udemy</span>
+                <a href="Images/Mastering DataStructures and Algrorithm using C and C++.pdf" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
     </div>
 </div>
+
 <!-- --------------------------contact----------------------->
 <div id="contact">
     <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> badalraj.047@gmail.com</p>
+        <div class="row contact-row">
+            <div class="card contact-left">
+                <h3><i class="fa-solid fa-paper-plane"></i> Let's Connect</h3>
+                <p class="contact-intro">I'm open to new opportunities and collaborations. Feel free to reach out!</p>
+                <p><i class="fa-solid fa-envelope"></i> badalraj.047@gmail.com</p>
                 <p><i class="fa-solid fa-square-phone"></i> +91 7739936118</p>
+                <p><i class="fa-solid fa-location-dot"></i> Patna, Bihar, India</p>
                 <div class="social-icons">
-                    <a href="https://linkedin.com/in/badalraj07"><i class="fa-brands fa-linkedin"></i> </a>
-                    <a href="https://github.com/badalraj047"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/badalraj_04?igsh=Yzd6NDc4aGpzYnkz"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/badalraj047" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/badalraj07" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/badalraj_04?igsh=Yzd6NDc4aGpzYnkz" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="contact-right">
+            <div class="card contact-right">
+                <h3>Send Me a Message</h3>
                 <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <div class="form-row">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" name="Subject" placeholder="Subject">
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Send Message <i class="fa-solid fa-arrow-right"></i></button>
                 </form>
                 <span id="msg"></span>
             </div>
         </div>
     </div>
-
 </div>
 
-<script>
-    
-    var tablinks = document.getElementsByClassName("tab-links")
-    var tabcontents = document.getElementsByClassName("tab-contents")
+<footer>
+    <p>&copy; <span id="year"></span> Badal Raj. Built and maintained personally.</p>
+</footer>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab")
-    }
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 <script>
     var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
+    function openmenu(){ sidemenu.style.right = "0"; }
+    function closemenu(){ sidemenu.style.right = "-220px"; }
 </script>
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxwm7d1nV489Z4aqAboBwptHtKIeapoACJmtgc6vk5TNFfOpJG6XZiEKZVlldEkOXn-/exec'
     const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")   
+    const msg = document.getElementById("msg")
 
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
             msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
+            setTimeout(function(){ msg.innerHTML = "" }, 5000)
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+</script>
 </body>
 </html>
