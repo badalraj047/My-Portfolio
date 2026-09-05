@@ -383,19 +383,38 @@ nav .fa-solid.fa-xmark{ display: none; }
 .skill-cat{
     background: #fff;
     border: 1px solid var(--border);
+    border-top: 3px solid var(--orange);
     border-radius: 14px;
-    padding: 22px;
+    padding: 24px 22px;
+    box-shadow: var(--shadow);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+.skill-cat:hover{
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
 }
 .skill-cat h4{
-    font-size: 14.5px;
+    font-size: 13px;
     font-weight: 700;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
 }
-.skill-cat h4 i{ color: var(--orange); }
+.skill-cat h4 i{
+    color: #fff;
+    background: linear-gradient(135deg, var(--orange), var(--yellow));
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
 .pill-grid{
     display: flex;
     flex-wrap: wrap;
@@ -409,11 +428,12 @@ nav .fa-solid.fa-xmark{ display: none; }
     font-size: 13px;
     font-weight: 500;
     color: var(--text-dim);
-    transition: border-color 0.2s, color 0.2s;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
 }
 .pill-grid span:hover{
     border-color: var(--orange);
     color: var(--orange);
+    background: #fff;
 }
 
 /* -------------------- projects -------------------- */
@@ -518,6 +538,23 @@ nav .fa-solid.fa-xmark{ display: none; }
 .certi-card:hover{
     transform: translateY(-4px);
     box-shadow: var(--shadow);
+}
+.certi-logo{
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: var(--bg-warm);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    padding: 8px;
+}
+.certi-logo img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 .certi-card h3{ font-size: 15.5px; font-weight: 700; margin-bottom: 4px; }
 .certi-issuer{
