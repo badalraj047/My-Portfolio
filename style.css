@@ -422,6 +422,9 @@ nav .fa-solid.fa-xmark{ display: none; }
     gap: 14px;
     margin-bottom: 20px;
 }
+.achieve-grid-4{
+    grid-template-columns: repeat(2, 1fr);
+}
 .achieve-item{
     background: #fff;
     border: 1px solid var(--border);
@@ -694,6 +697,18 @@ nav .fa-solid.fa-xmark{ display: none; }
     max-height: 100%;
     object-fit: contain;
 }
+.certi-logo-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: #fff;
+    background: linear-gradient(135deg, #0176D3, #01A1E2);
+}
+.certi-logo-hr{ background: linear-gradient(135deg, #1BA94C, #17A75C); }
+.certi-logo-nptel{ background: linear-gradient(135deg, #8B1E3F, #B33A5A); }
+.certi-logo-coursera{ background: linear-gradient(135deg, #0056D2, #2A73E8); }
+.certi-logo-li{ background: linear-gradient(135deg, #0A66C2, #0A85D1); font-size: 18px; }
+.certi-logo-ojaswi{ background: linear-gradient(135deg, #E0521C, #F2762C); }
 .certi-card h3{ font-size: 15.5px; font-weight: 700; margin-bottom: 4px; }
 .certi-issuer{
     display: block;
