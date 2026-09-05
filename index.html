@@ -26,10 +26,11 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certificates">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                <i class="fa-solid fa-xmark" onclick="closemenu()" role="button" tabindex="0" aria-label="Close menu"></i>
             </ul>
         </nav>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        <a href="#contact" class="btn btn2 nav-cta">Let's Talk</a>
+        <i class="fa-solid fa-bars" onclick="openmenu()" role="button" tabindex="0" aria-label="Open menu" aria-expanded="false" aria-controls="sidemenu"></i>
     </div>
 </header>
 
@@ -42,10 +43,10 @@
             <h1>Hi, I'm <span class="grad-text">Badal Raj</span></h1>
             <p class="hero-tagline">Building AI-powered products with <span class="grad-text">cloud &amp; full-stack</span> engineering</p>
             <p class="header-sub">
-                B.Tech CSE graduate (LPU, 2026) and founder of
+                B.Tech CSE graduate (LPU, 2026) building AI and cloud-native products end to end —
+                from backend architecture to the interface people actually use. Currently founder of
                 <a href="https://mrintervo.com" target="_blank" rel="noopener">MrInterVo</a>,
-                an AI mock-interview and ATS resume platform. I build products end to end —
-                backend architecture, cloud infrastructure, and the interface people use every day.
+                an AI mock-interview and ATS resume platform.
             </p>
             <div class="header-actions">
                 <a href="#projects" class="btn btn2">View Projects <i class="fa-solid fa-arrow-right"></i></a>
@@ -102,9 +103,14 @@
                     passionate about full-stack development, cloud computing, and AI. I like turning ideas
                     into products people actually use — currently building MrInterVo as a solo technical founder.
                 </p>
+                <div class="edu-block">
+                    <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div>
+                        <span class="edu-degree">B.Tech, Computer Science &amp; Engineering</span>
+                        <span class="edu-school">Lovely Professional University · 2022 – 2026</span>
+                    </div>
+                </div>
                 <ul class="about-meta">
-                    <li><i class="fa-solid fa-graduation-cap"></i> B.Tech CSE — Lovely Professional University</li>
-                    <li><i class="fa-solid fa-calendar"></i> 2022 – 2026</li>
                     <li><i class="fa-solid fa-chart-line"></i> CGPA: 7.00 / 10</li>
                     <li><i class="fa-solid fa-location-dot"></i> Patna, Bihar, India</li>
                 </ul>
@@ -113,7 +119,7 @@
             <div class="card achieve-card">
                 <h3><i class="fa-solid fa-trophy"></i> Achievements</h3>
                 <div class="achieve-grid">
-                    <div class="achieve-item">
+                    <div class="achieve-item achieve-highlight">
                         <i class="fa-solid fa-code"></i>
                         <span class="stat-value">400+</span>
                         <span class="stat-caption">DSA Problems Solved</span>
@@ -194,12 +200,12 @@
         <div class="projects-grid">
             <div class="project-card project-card-featured">
                 <div class="project-thumb thumb-mrintervo">
-                    <span class="featured-badge">Featured</span>
-                    <img src="Images/mrintervo-screenshot.png" alt="MrInterVo homepage screenshot" class="thumb-screenshot">
+                    <span class="featured-badge"><i class="fa-solid fa-star"></i> Featured Project</span>
+                    <img src="Images/mrintervo-screenshot.png" alt="MrInterVo homepage screenshot" class="thumb-screenshot" loading="lazy">
                 </div>
                 <div class="project-body">
                     <div class="project-title-row">
-                        <img src="Images/mrintervo-logo.png" alt="MrInterVo logo" class="project-logo" width="28" height="28">
+                        <img src="Images/mrintervo-logo.png" alt="MrInterVo logo" class="project-logo" width="28" height="28" loading="lazy">
                         <h3>MrInterVo — AI Interview Platform</h3>
                     </div>
                     <p>AI-powered platform for mock interviews with live voice feedback, an ATS resume checker, and application analytics.</p>
@@ -263,25 +269,25 @@
         </div>
         <div class="certi-grid">
             <div class="certi-card">
-                <div class="certi-logo"><img src="Images/Certi1.png" alt="Microsoft Azure" width="52" height="52"></div>
+                <div class="certi-logo"><img src="Images/Certi1.png" alt="Microsoft Azure logo" width="52" height="52" loading="lazy"></div>
                 <h3>Azure Administrator Associate</h3>
                 <span class="certi-issuer">Microsoft</span>
                 <a href="https://drive.google.com/file/d/1zZqZGoTJL7iVGavXzy0NumYODH8Pc7Cu/view" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
             <div class="certi-card">
-                <div class="certi-logo"><img src="Images/Certi1.png" alt="Microsoft Azure" width="52" height="52"></div>
+                <div class="certi-logo"><img src="Images/Certi1.png" alt="Microsoft Azure logo" width="52" height="52" loading="lazy"></div>
                 <h3>Azure Fundamentals (AZ-900)</h3>
                 <span class="certi-issuer">Microsoft</span>
                 <span class="certi-unverified"><i class="fa-solid fa-circle-info"></i> Verification link unavailable</span>
             </div>
             <div class="certi-card">
-                <div class="certi-logo"><img src="Images/Certi2.jpg" alt="Board Infinity" width="52" height="52"></div>
+                <div class="certi-logo"><img src="Images/Certi2.jpg" alt="Board Infinity logo" width="52" height="52" loading="lazy"></div>
                 <h3>Core &amp; Advanced Java</h3>
                 <span class="certi-issuer">Board Infinity</span>
                 <a href="Images/Board Infinity CoreAndAdvancedJava.pdf" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
             <div class="certi-card">
-                <div class="certi-logo"><img src="Images/Certi3.jpg" alt="Udemy" width="52" height="52"></div>
+                <div class="certi-logo"><img src="Images/Certi3.jpg" alt="Udemy logo" width="52" height="52" loading="lazy"></div>
                 <h3>Mastering DSA using C &amp; C++</h3>
                 <span class="certi-issuer">Udemy</span>
                 <a href="Images/Mastering DataStructures and Algrorithm using C and C++.pdf" target="_blank" rel="noopener">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -315,7 +321,7 @@
                     </div>
                     <input type="text" name="Subject" placeholder="Subject">
                     <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Send Message <i class="fa-solid fa-arrow-right"></i></button>
+                    <button type="submit" class="btn btn2" id="submitBtn">Send Message <i class="fa-solid fa-arrow-right"></i></button>
                 </form>
                 <span id="msg"></span>
             </div>
@@ -332,8 +338,18 @@
 </script>
 <script>
     var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){ sidemenu.style.right = "0"; }
-    function closemenu(){ sidemenu.style.right = "-260px"; }
+    var menuBtn = document.querySelector(".fa-solid.fa-bars");
+    function openmenu(){
+        sidemenu.style.right = "0";
+        menuBtn.setAttribute("aria-expanded", "true");
+    }
+    function closemenu(){
+        sidemenu.style.right = "-260px";
+        menuBtn.setAttribute("aria-expanded", "false");
+    }
+    document.querySelectorAll("#sidemenu a").forEach(link => {
+        link.addEventListener("click", closemenu);
+    });
 </script>
 <script>
     // Active nav-link highlighting on scroll
@@ -356,16 +372,29 @@
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxwm7d1nV489Z4aqAboBwptHtKIeapoACJmtgc6vk5TNFfOpJG6XZiEKZVlldEkOXn-/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
+    const submitBtn = document.getElementById("submitBtn")
+    const submitBtnOriginal = submitBtn.innerHTML
 
     form.addEventListener('submit', e => {
       e.preventDefault()
+      submitBtn.disabled = true
+      submitBtn.innerHTML = "Sending..."
+      msg.style.color = "var(--orange)"
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
             msg.innerHTML = "Message sent successfully"
             setTimeout(function(){ msg.innerHTML = "" }, 5000)
             form.reset()
         })
-        .catch(error => console.error('Error!', error.message))
+        .catch(error => {
+            console.error('Error!', error.message)
+            msg.style.color = "#c0392b"
+            msg.innerHTML = "Something went wrong. Please email me directly."
+        })
+        .finally(() => {
+            submitBtn.disabled = false
+            submitBtn.innerHTML = submitBtnOriginal
+        })
     })
 </script>
 </body>
