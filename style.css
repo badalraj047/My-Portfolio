@@ -689,24 +689,20 @@ nav .fa-solid.fa-xmark{ display: none; }
     background: linear-gradient(135deg, #1a1a1a, #3a2a1a);
     color: var(--yellow);
 }
-.thumb-login, .thumb-aws, .thumb-library{
+.thumb-forensic, .thumb-geomap{
     position: relative;
 }
-.thumb-login i, .thumb-aws i, .thumb-library i{
+.thumb-forensic i, .thumb-geomap i{
     position: relative;
     z-index: 1;
 }
-.thumb-login{
+.thumb-forensic{
     background: linear-gradient(135deg, #FFF3E6, #FFE3C2);
     color: var(--orange-2);
 }
-.thumb-aws{
+.thumb-geomap{
     background: linear-gradient(135deg, #FFF9F3, #FFEBD1);
-    color: #D97B1F;
-}
-.thumb-library{
-    background: linear-gradient(135deg, #FDF2E9, #FBE0C4);
-    color: #B5651D;
+    color: #2E7D32;
 }
 .featured-badge{
     position: absolute;
