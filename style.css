@@ -908,11 +908,12 @@ form .btn2{
     font-family: 'Poppins', sans-serif;
 }
 #msg{
-    color: var(--orange);
+    color: var(--text-dim);
     margin-top: 10px;
     display: block;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 12.5px;
+    font-style: italic;
 }
 
 /* -------------------- footer -------------------- */

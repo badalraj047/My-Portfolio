@@ -379,16 +379,16 @@
             </div>
             <div class="card contact-right">
                 <h3>Send Me a Message</h3>
-                <form name="submit-to-google-sheet">
+                <form id="contactForm">
                     <div class="form-row">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="text" name="Name" id="cfName" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="cfEmail" placeholder="Your Email" required>
                     </div>
-                    <input type="text" name="Subject" placeholder="Subject">
-                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <input type="text" name="Subject" id="cfSubject" placeholder="Subject">
+                    <textarea name="Message" id="cfMessage" rows="5" placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn btn2" id="submitBtn">Send Message <i class="fa-solid fa-arrow-right"></i></button>
                 </form>
-                <span id="msg"></span>
+                <span id="msg">This opens your email app with the message pre-filled — just hit send there.</span>
             </div>
         </div>
     </div>
@@ -434,32 +434,27 @@
     setActive();
 </script>
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxwm7d1nV489Z4aqAboBwptHtKIeapoACJmtgc6vk5TNFfOpJG6XZiEKZVlldEkOXn-/exec'
-    const form = document.forms['submit-to-google-sheet']
+    const form = document.getElementById("contactForm")
     const msg = document.getElementById("msg")
-    const submitBtn = document.getElementById("submitBtn")
-    const submitBtnOriginal = submitBtn.innerHTML
 
     form.addEventListener('submit', e => {
       e.preventDefault()
-      submitBtn.disabled = true
-      submitBtn.innerHTML = "Sending..."
+
+      const name = document.getElementById("cfName").value.trim()
+      const email = document.getElementById("cfEmail").value.trim()
+      const subject = document.getElementById("cfSubject").value.trim() || "Portfolio contact from " + name
+      const message = document.getElementById("cfMessage").value.trim()
+
+      const body = `Name: ${name}\nEmail: ${email}\n\n${message}`
+      const mailtoLink = `mailto:badalraj.047@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+
+      window.location.href = mailtoLink
+
       msg.style.color = "var(--orange)"
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){ msg.innerHTML = "" }, 5000)
-            form.reset()
-        })
-        .catch(error => {
-            console.error('Error!', error.message)
-            msg.style.color = "#c0392b"
-            msg.innerHTML = "Something went wrong. Please email me directly."
-        })
-        .finally(() => {
-            submitBtn.disabled = false
-            submitBtn.innerHTML = submitBtnOriginal
-        })
+      msg.innerHTML = "Opening your email app..."
+      setTimeout(function(){
+          msg.innerHTML = "This opens your email app with the message pre-filled — just hit send there."
+      }, 4000)
     })
 </script>
 </body>
