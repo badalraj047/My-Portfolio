@@ -759,6 +759,9 @@ nav .fa-solid.fa-xmark{ display: none; }
     border: 1px solid var(--border);
     border-radius: 16px;
     padding: 26px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: transform 0.25s, box-shadow 0.25s;
 }
 .certi-card:hover{
@@ -811,6 +814,7 @@ nav .fa-solid.fa-xmark{ display: none; }
     text-decoration: none;
     font-size: 13px;
     font-weight: 700;
+    margin-top: auto;
 }
 .certi-unverified{
     display: inline-flex;
@@ -819,6 +823,7 @@ nav .fa-solid.fa-xmark{ display: none; }
     font-size: 12.5px;
     color: var(--text-dim);
     font-style: italic;
+    margin-top: auto;
 }
 
 /* -------------------- contact -------------------- */
