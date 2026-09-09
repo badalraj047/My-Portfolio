@@ -363,65 +363,100 @@ nav .fa-solid.fa-xmark{ display: none; }
     z-index: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    gap: 26px;
     margin-top: 44px;
 }
-.stat-pill{
-    border: 1px solid rgba(17,17,17,0.06);
-    border-radius: 16px;
-    padding: 17px 18px;
+.ribbon-stat{
+    position: relative;
     display: flex;
     align-items: center;
     gap: 14px;
-    box-shadow: 0 6px 18px rgba(17,17,17,0.05);
-    transition: transform 0.25s, box-shadow 0.25s;
+    padding: 16px 34px 16px 22px;
+    color: #fff;
+    clip-path: polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%);
+    box-shadow:
+        6px 10px 0 rgba(0,0,0,0.12),
+        6px 10px 22px rgba(17,17,17,0.28);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
-.stat-pill:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 16px 32px rgba(17,17,17,0.09);
+.ribbon-stat::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.05) 35%, transparent 60%);
+    pointer-events: none;
 }
-.stat-pill-blue{ background: linear-gradient(155deg, #EEF5FF, #E4EFFE); }
-.stat-pill-green{ background: linear-gradient(155deg, #EAFBF1, #DFF7EA); }
-.stat-pill-purple{ background: linear-gradient(155deg, #F3EEFE, #ECE4FC); }
-.stat-pill-icon{
-    width: 48px;
-    height: 48px;
-    border-radius: 13px;
+.ribbon-stat::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14%;
+    height: 100%;
+    background: rgba(0,0,0,0.22);
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+.ribbon-stat:hover{
+    transform: translateY(-4px);
+    box-shadow:
+        6px 14px 0 rgba(0,0,0,0.12),
+        6px 18px 28px rgba(17,17,17,0.32);
+}
+.ribbon-stat-yellow{ background: linear-gradient(120deg, #FFD466, #F5940B); }
+.ribbon-stat-green{ background: linear-gradient(120deg, #4EEAA0, #0B9E6B); }
+.ribbon-stat-purple{ background: linear-gradient(120deg, #C285FC, #7C1FE0); }
+.ribbon-icon{
+    position: relative;
+    z-index: 1;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.12);
+    border: 2px solid rgba(255,255,255,0.9);
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 6px 14px rgba(17,17,17,0.12);
+    box-shadow:
+        inset 0 2px 4px rgba(255,255,255,0.4),
+        inset 0 -3px 6px rgba(0,0,0,0.25),
+        0 3px 8px rgba(0,0,0,0.2);
 }
-.stat-pill-blue .stat-pill-icon{ background: linear-gradient(155deg, #5B9DF9, #3B82F6); }
-.stat-pill-green .stat-pill-icon{ background: linear-gradient(155deg, #4ADE80, #22C55E); }
-.stat-pill-purple .stat-pill-icon{ background: linear-gradient(155deg, #C084FC, #A855F7); }
-.stat-pill-body{
-    flex: 1;
-    min-width: 0;
+.ribbon-icon img{
+    width: 55%;
+    height: 55%;
+    object-fit: contain;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,0.25));
 }
-.glass-stat-label{
+.ribbon-body{ position: relative; z-index: 1; flex: 1; min-width: 0; }
+.ribbon-label{
     display: block;
-    font-size: 11.5px;
-    color: var(--text-dim);
+    font-size: 12px;
+    color: rgba(255,255,255,0.9);
     font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
-.stat-pill-value{
+.ribbon-value{
     display: block;
-    font-size: 21px;
-    font-weight: 700;
-    color: var(--text);
-    line-height: 1.3;
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.25;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
-.stat-pill-value small{
+.ribbon-value small{
     font-size: 12px;
     font-weight: 500;
-    color: var(--text-dim);
+    color: rgba(255,255,255,0.8);
 }
-.glass-stat-caption{
+.ribbon-caption{
     display: block;
-    font-size: 11.5px;
-    color: var(--text-dim);
+    font-size: 12px;
+    color: rgba(255,255,255,0.9);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+.ribbon-sparkle{
+    display: none;
 }
 .stat-value{ display: block; font-size: 18px; font-weight: 700; }
 .stat-caption{ display: block; font-size: 11px; color: var(--text-dim); }
