@@ -363,27 +363,27 @@ nav .fa-solid.fa-xmark{ display: none; }
     z-index: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 26px;
-    margin-top: 44px;
+    gap: 16px;
+    margin-top: 36px;
 }
 .ribbon-stat{
     position: relative;
     display: flex;
     align-items: center;
-    gap: 14px;
-    padding: 16px 34px 16px 22px;
+    gap: 10px;
+    padding: 11px 26px 11px 16px;
     color: #fff;
-    clip-path: polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%);
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
     box-shadow:
-        6px 10px 0 rgba(0,0,0,0.12),
-        6px 10px 22px rgba(17,17,17,0.28);
+        4px 6px 0 rgba(0,0,0,0.10),
+        4px 8px 16px rgba(17,17,17,0.22);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 .ribbon-stat::before{
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.05) 35%, transparent 60%);
+    background: linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.04) 35%, transparent 60%);
     pointer-events: none;
 }
 .ribbon-stat::after{
@@ -391,36 +391,36 @@ nav .fa-solid.fa-xmark{ display: none; }
     position: absolute;
     top: 0;
     right: 0;
-    width: 14%;
+    width: 11%;
     height: 100%;
-    background: rgba(0,0,0,0.22);
+    background: rgba(0,0,0,0.2);
     clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 .ribbon-stat:hover{
-    transform: translateY(-4px);
+    transform: translateY(-3px);
     box-shadow:
-        6px 14px 0 rgba(0,0,0,0.12),
-        6px 18px 28px rgba(17,17,17,0.32);
+        4px 9px 0 rgba(0,0,0,0.10),
+        4px 13px 20px rgba(17,17,17,0.26);
 }
-.ribbon-stat-yellow{ background: linear-gradient(120deg, #FFD466, #F5940B); }
-.ribbon-stat-green{ background: linear-gradient(120deg, #4EEAA0, #0B9E6B); }
-.ribbon-stat-purple{ background: linear-gradient(120deg, #C285FC, #7C1FE0); }
+.ribbon-stat-yellow{ background: linear-gradient(120deg, var(--yellow), #E8890C); }
+.ribbon-stat-green{ background: linear-gradient(120deg, var(--orange-2), #E85D2F); }
+.ribbon-stat-purple{ background: linear-gradient(120deg, #D9480F, #B03A0B); }
 .ribbon-icon{
     position: relative;
     z-index: 1;
-    width: 46px;
-    height: 46px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
     background: rgba(255,255,255,0.12);
-    border: 2px solid rgba(255,255,255,0.9);
+    border: 1.5px solid rgba(255,255,255,0.9);
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow:
-        inset 0 2px 4px rgba(255,255,255,0.4),
-        inset 0 -3px 6px rgba(0,0,0,0.25),
-        0 3px 8px rgba(0,0,0,0.2);
+        inset 0 1.5px 3px rgba(255,255,255,0.4),
+        inset 0 -2px 4px rgba(0,0,0,0.25),
+        0 2px 6px rgba(0,0,0,0.18);
 }
 .ribbon-icon img{
     width: 55%;
@@ -431,27 +431,27 @@ nav .fa-solid.fa-xmark{ display: none; }
 .ribbon-body{ position: relative; z-index: 1; flex: 1; min-width: 0; }
 .ribbon-label{
     display: block;
-    font-size: 12px;
+    font-size: 10.5px;
     color: rgba(255,255,255,0.9);
     font-weight: 500;
     text-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 .ribbon-value{
     display: block;
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 800;
     color: #fff;
     line-height: 1.25;
-    text-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 .ribbon-value small{
-    font-size: 12px;
+    font-size: 10.5px;
     font-weight: 500;
     color: rgba(255,255,255,0.8);
 }
 .ribbon-caption{
     display: block;
-    font-size: 12px;
+    font-size: 10.5px;
     color: rgba(255,255,255,0.9);
     text-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
